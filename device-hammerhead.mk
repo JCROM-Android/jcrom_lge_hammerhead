@@ -7,6 +7,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.voice.capable=true
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.sms.capable=true
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.ui.phone=480 \
+    persist.sys.ui.tablet=288
+
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/vendor/bin/vss_init:system/vendor/bin/vss_init \
 	$(LOCAL_PATH)/proprietary/system/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \

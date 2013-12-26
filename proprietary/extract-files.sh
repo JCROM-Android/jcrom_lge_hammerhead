@@ -48,6 +48,7 @@ cp -a tmp/vendor/lib/libvss_common_iface.so system/vendor/lib/libvss_common_ifac
 cp -a tmp/vendor/lib/libwvdrm_L1.so system/vendor/lib/libwvdrm_L1.so
 cp -a tmp/vendor/lib/libwvm.so system/vendor/lib/libwvm.so
 cp -a tmp/lib/soundfx/libfmas.so system/lib/soundfx/libfmas.so
+cp -a tmp/lib/libmmcamera_interface.so system/lib/libmmcamera_interface.so
 cp -a tmp/vendor/media/LMspeed_508.emd system/vendor/media/LMspeed_508.emd
 cp -a tmp/vendor/media/PFFprec_600.emd system/vendor/media/PFFprec_600.emd
 cp -a tmp/etc/DxHDCP.cfg system/etc/DxHDCP.cfg

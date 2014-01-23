@@ -48,5 +48,14 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/media/audio/ringtones/RobotsforEveryone.ogg:system/media/audio/ringtones/RobotsforEveryone.ogg \
 	$(LOCAL_PATH)/proprietary/system/media/audio/ringtones/SpagnolaOrchestration.ogg:system/media/audio/ringtones/SpagnolaOrchestration.ogg
 
+# Stock Apps
+PRODUCT_PACKAGES += \
+    OmaDmclient \
+    qcrilmsgtunnel \
+    SprintHiddenMenu \
+    shutdownlistener \
+    TimeService \
+    UpdateSetting
+
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage12.mk)
 

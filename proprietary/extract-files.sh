@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "Download and Deodexing... Please wait."
-wget -nc -q https://dl.google.com/dl/android/aosp/hammerhead-kot49h-factory-02006b99.tgz
-tar zxf hammerhead-kot49h-factory-02006b99.tgz
-cd hammerhead-kot49h
-unzip image-hammerhead-kot49h.zip
+wget -nc -q https://dl.google.com/dl/android/aosp/hammerhead-ktu84m-factory-53ff95bf.tgz
+tar zxf hammerhead-ktu84m-factory-53ff95bf.tgz
+cd hammerhead-ktu84m
+unzip image-hammerhead-ktu84m.zip
 cd ../
-./simg2img hammerhead-kot49h/system.img system.ext4.img
+./simg2img hammerhead-ktu84m/system.img system.ext4.img
 mkdir system
 mkdir tmp
 sudo mount -o loop -t ext4 system.ext4.img tmp
@@ -49,6 +49,11 @@ cp -a tmp/vendor/lib/libwvdrm_L1.so system/vendor/lib/libwvdrm_L1.so
 cp -a tmp/vendor/lib/libwvm.so system/vendor/lib/libwvm.so
 cp -a tmp/lib/soundfx/libfmas.so system/lib/soundfx/libfmas.so
 cp -a tmp/lib/libmmcamera_interface.so system/lib/libmmcamera_interface.so
+cp -a tmp/lib/libgcastv2_base.so system/lib/libgcastv2_base.so
+cp -a tmp/lib/libgcastv2_support.so system/lib/libgcastv2_support.so
+cp -a tmp/lib/libjgcastservice.so system/lib/libjgcastservice.so
+cp -a tmp/lib/libjhead.so system/lib/libjhead.so
+cp -a tmp/lib/libjhead_jni.so system/lib/libjhead_jni.so
 cp -a tmp/vendor/media/LMspeed_508.emd system/vendor/media/LMspeed_508.emd
 cp -a tmp/vendor/media/PFFprec_600.emd system/vendor/media/PFFprec_600.emd
 cp -a tmp/etc/DxHDCP.cfg system/etc/DxHDCP.cfg
@@ -58,6 +63,6 @@ cp -a tmp/media/audio/ringtones/SpagnolaOrchestration.ogg system/media/audio/rin
 
 sudo umount tmp
 rm -rf tmp
-rm -rf hammerhead-kot49h
+rm -rf hammerhead-ktu84m
 rm system.ext4.img
 

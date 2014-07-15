@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "Please wait."
-wget -nc -q https://dl.google.com/dl/android/aosp/hammerhead-ktu84p-factory-35ea0277.tgz
-tar zxf hammerhead-ktu84p-factory-35ea0277.tgz
-cd hammerhead-ktu84p
-unzip image-hammerhead-ktu84p.zip
+wget -nc -q https://dl.google.com/dl/android/aosp/hammerhead-ktu84q-factory-ae475293.tgz
+tar zxf hammerhead-ktu84q-factory-ae475293.tgz
+cd hammerhead-ktu84q
+unzip image-hammerhead-ktu84q.zip
 cd ../
-./simg2img hammerhead-ktu84p/system.img system.ext4.img
+./simg2img hammerhead-ktu84q/system.img system.ext4.img
 mkdir system
 mkdir tmp
 sudo mount -o loop -t ext4 system.ext4.img tmp
@@ -63,6 +63,6 @@ cp -a tmp/media/audio/ringtones/SpagnolaOrchestration.ogg system/media/audio/rin
 
 sudo umount tmp
 rm -rf tmp
-rm -rf hammerhead-ktu84p
+rm -rf hammerhead-ktu84q
 rm system.ext4.img
 

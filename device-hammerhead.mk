@@ -5,7 +5,8 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.sms.capable=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.ui.phone=480 \
-    persist.sys.ui.tablet=288
+    persist.sys.ui.tablet=288 \
+    persist.sys.ui.phablet=370
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/vendor/bin/vss_init:system/vendor/bin/vss_init \

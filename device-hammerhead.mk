@@ -9,6 +9,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.ui.phablet=370
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.ui.select=0
+
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Titania.ogg \
     ro.config.notification_sound=Tethys.ogg \
     ro.config.alarm_alert=Oxygen.ogg \
